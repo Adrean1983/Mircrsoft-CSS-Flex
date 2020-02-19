@@ -18,4 +18,14 @@ Set the container, main-nav, main-nav ul.
 
 Add a border on bottom for li items on hover.
 
-2.
+2. Make a showcase. Showcase is a header tag.
+
+Need to add a utility button style first, it is an a tag that is styled like a button. Most style goes in the .showcase. The background picture is here background: url("./img/slide1.png") no-repeat center center/cover;
+
+3. Add the Xbox Section
+
+4. 2nd cards
+
+5. Carbon
+
+6. Follow
