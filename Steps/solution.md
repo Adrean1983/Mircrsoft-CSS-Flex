@@ -467,3 +467,92 @@ margin-bottom: 20px;
         </ul>
       </div>
     </footer>
+
+9. Media Queries + html
+
+
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <div class="container">
+      <!-- Nav -->
+
+@media (max-width: 700px) {
+.menu-btn {
+display: block;
+}
+
+.menu-btn:hover {
+opacity: 0.5;
+}
+
+.main-nav ul.right-menu {
+margin-right: 50px;
+}
+
+.main-nav ul.main-menu {
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+background: #f2f2f2;
+width: 50%;
+height: 100%;
+transform: translateX(-500px);
+border-right: #ccc 1px solid;
+opacity: 0.9;
+padding: 30px;
+transition: transform 0.5s ease-in-out;
+}
+
+.main-nav ul.main-menu.show {
+transform: translateX(-20px);
+}
+
+.main-nav ul.main-menu li {
+padding: 10px;
+border-bottom: #ccc solid 1px;
+font-size: 14px;
+}
+
+.main-nav ul.main-menu li:last-child {
+border-bottom: 0;
+}
+
+.home-cards {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.xbox .content p {
+display: none;
+}
+
+.xbox .content h2 {
+margin-bottom: 20px;
+}
+.carbon .content {
+width: 85%;
+}
+
+.links .links-inner {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 500px) {
+.home-cards {
+grid-template-columns: 1fr;
+}
+
+.links .links-inner {
+grid-template-columns: 1fr;
+}
+.links .links-inner ul {
+margin-bottom: 20px;
+}
+}
+
+10. Javascript
+    document.querySelector(".menu-btn").addEventListener("click", () => {
+    document.querySelector(".main-menu").classList.toggle("show");
+    });
